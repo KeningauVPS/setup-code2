@@ -1,0 +1,255 @@
+# User Status
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-list.sh
+mv ./user-list.sh /usr/local/bin/user-list.sh
+chmod +x /usr/local/bin/user-list.sh
+
+# instal Buat Akun SSH/OpenVPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/buatakun.sh
+mv ./buatakun.sh /usr/bin/buatakun.sh
+chmod +x /usr/bin/buatakun.sh
+
+# instal Generate Akun SSH/OpenVPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-generate
+mv ./user-generate /usr/bin/user-generate
+chmod +x /usr/bin/generate.sh
+
+# instal Generate Akun Trial
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/trial
+mv ./trial /usr/bin/trial
+chmod +x /usr/bin/trial
+
+# instal  Ganti Password Akun SSH/VPN
+cd
+wget https://raw.githubusercontent.com/elhad/cstup/master/config/user-password
+mv ./user-password /usr/bin/user-paswword
+chmod +x /usr/bin/user-password
+
+# instal Generate Akun SSH/OpenVPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/userrenew.sh
+mv ./userrenew.sh /usr/bin/userrenew.sh
+chmod +x /usr/bin/userrenew.sh
+
+# instal Hapus Akun SSH/OpenVPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/userdelete
+mv ./userdelete /usr/bin/userdelete
+chmod +x /usr/bin/userdelete
+
+# instal Cek Login Dropbear, OpenSSH & OpenVPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-log
+mv ./user-log /usr/bin/user-log
+chmod +x /usr/bin/user-log
+
+# instal Auto Limit Multi Login
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/autolimit.sh
+mv ./autolimit.sh /usr/bin/autolimit.sh
+chmod +x /usr/bin/autolimit.sh
+
+# instal Auto Limit Script Multi Login
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-auto-limit-script
+mv ./user-auto-limit-script /usr/local/bin/user-auto-limit-script
+chmod +x /usr/local/bin/user-auto-limit-script
+# instal Melihat detail user SSH & OpenVPN 
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-detail
+mv ./user-detail /usr/bin/user-detail
+chmod +x /usr/bin/user-detail
+
+# instal Delete Akun Expire
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-delete-expired
+mv ./user-delete-expired /usr/bin/user-delete-expired
+chmod +x /usr/bin/user-delete-expired
+
+# instal  Kill Multi Login
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/autokill
+mv ./autokill /usr/bin/autokill
+chmod +x /usr/bin/autokill
+
+# instal  Kill Multi Login2
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/autokill.sh
+mv ./autokill.sh /usr/bin/autokill.sh
+chmod +x /usr/bin/autokill.sh
+
+# instal Auto Banned Akun
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-ban
+mv ./user-ban /usr/bin/user-ban
+chmod +x /usr/bin/user-ban
+
+# instal Unbanned Akun
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-unban
+mv ./user-unban /usr/bin/user-unban
+chmod +x /usr/bin/user-unban
+
+# instal Mengunci Akun SSH & OpenVPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-lock
+mv ./user-lock /usr/bin/user-lock
+chmod +x /usr/bin/user-lock
+
+# instal Membuka user SSH & OpenVPN yang terkunci
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-unlock
+mv ./user-unlock /usr/bin/user-unlock
+chmod +x /usr/bin/user-unlock
+
+# instal Melihat daftar user yang terkick oleh perintah user-limit
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/log-limit
+mv ./log-limit /usr/bin/log-limit
+chmod +x /usr/bin/log-limit
+
+# instal Melihat daftar user yang terbanned oleh perintah user-ban
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/log-ban
+mv ./log-ban /usr/bin/log-ban
+chmod +x /usr/bin/log-ban
+
+# instal Buat Akun PPTP VPN
+cd
+wgethttps://raw.githubusercontent.com/ehomecore91/setup-code2/user-add-pptp
+mv ./user-add-pptp /usr/bin/user-add-pptp
+chmod +x /usr/bin/user-add-pptp
+
+# instal Hapus Akun PPTP VPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/user-delete-pptp
+mv ./user-delete-pptp /usr/bin/user-delete-pptp
+chmod +x /usr/bin/user-delete-pptp
+
+# instal Lihat Detail Akun PPTP VPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/user-detail-pptp
+mv ./user-detail-pptp /usr/bin/user-detail-pptp
+chmod +x /usr/bin/user-detail-pptp
+
+# instal Cek login PPTP VPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/userloginpptp.sh
+mv ./userloginpptp.sh /usr/bin/userloginpptp.sh
+chmod +x /usr/bin/userloginpptp.sh
+
+# instal Lihat Daftar User PPTP VPN
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/user-login-pptp
+mv ./user-login-pptp /usr/bin/user-login-pptp
+chmod +x /usr/bin/user-login-pptp
+
+# instal Set Auto Reboot
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/auto-reboot
+mv ./auto-reboot /usr/bin/auto-reboot
+chmod +x /usr/bin/auto-reboot
+
+# instal autolimitscript
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/auto-limit-script.sh
+mv ./auto-limit-script.sh /usr/bin/auto-limit-script.sh
+chmod +x /usr/bin/auto-limit-script.sh
+
+# instal userdelete
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/userdelete.sh
+mv ./userdelete.sh /usr/bin/userdelete.sh
+chmod +x /usr/bin/userdelete.sh
+
+# instal diagnosa
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/diagnosa.sh
+mv ./diagnosa.sh /usr/bin/diagnosa.sh
+chmod +x /usr/bin/diagnosa.sh
+
+# instal ram
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/ram.sh
+mv ./ram.sh /usr/bin/ram.sh
+chmod +x /usr/bin/ram.sh
+
+# log install
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/log-install.sh
+mv ./log-install.sh /usr/bin/log-install.sh
+chmod +x /usr/bin/log-install.sh
+
+# edit ubah-port
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/ubahport.sh
+mv ./ubahport.sh /usr/bin/ubahport.sh
+chmod +x /usr/bin/ubahport.sh
+
+# edit-port-dropbear
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/edit-port-dropbear
+mv ./edit-port-dropbear /usr/bin/edit-port-dropbear
+chmod +x /usr/bin/edit-port-dropbear
+
+# edit-port-openssh
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/edit-port-openssh
+mv ./edit-port-openssh /usr/bin/edit-port-openssh
+chmod +x /usr/bin/edit-port-openssh
+
+# edit-port-openvpn
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/edit-port-openvpn
+mv ./edit-port-openvpn /usr/bin/edit-port-openvpn
+chmod +x /usr/bin/edit-port-openvpn
+
+# edit-port-openvpn
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/edit-port-squid
+mv ./edit-port-squid /usr/bin/edit-port-squid
+chmod +x /usr/bin/edit-port-squid
+
+# restart
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/restart.sh
+mv ./restart.sh /usr/bin/restart.sh
+chmod +x /usr/bin/restart.sh
+
+# restart-dropbear
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/restart-dropbear.sh
+mv ./restart-dropbear.sh /usr/bin/restart-dropbear.sh
+chmod +x /usr/bin/restart-dropbear.sh
+
+# restart-squid
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/restart-squid.sh
+mv ./restart-squid.sh /usr/bin/restart-squid.sh
+chmod +x /usr/bin/restart-squid.sh
+
+# restart-openvpn
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/restart-openvpn.sh
+mv ./restart-openvpn.sh /usr/bin/restart-openvpn.sh
+chmod +x /usr/bin/restart-openvpn.sh
+
+# restart-webmin
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/restart-webmin.sh
+mv ./restart-webmin.sh /usr/bin/restart-webmin.sh
+chmod +x /usr/bin/restart-webmin.sh
+
+# Install Menu
+cd
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/menu
+mv ./menu /usr/local/bin/menu
+chmod +x /usr/local/bin/menu
+cd ~/
+rm -f /root/update.sh
+
+echo""
+menu
