@@ -80,7 +80,7 @@ echo -e "\e[40;38;5;82m[38]\e[40;38;5;198mSet auto reboot pada server\e[40;38;5;
 echo -e "\e[40;38;5;82m[39]\e[40;38;5;198mReboot server\e[40;38;5;226m [reboot]"
 echo -e "\e[40;38;5;82m[40]\e[40;38;5;198m Ganti Password Server\e[40;38;5;226m [passwd]"
 echo -e "\e[40;38;5;82m[41]\e[40;38;5;198mLihat log instalasi\e[40;38;5;226m [log-install]"
-echo -e "\e[40;38;5;82m 42]\e[40;38;5;198mUpdate now"
+echo -e "\e[40;38;5;82m[42]\e[40;38;5;198mUpdate now"
 echo "-------------------------------------------"
 read -p "Tulis Pilihan Anda (angka): " x
 if test $x -eq 1; then
