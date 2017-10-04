@@ -137,3 +137,9 @@ screen -AmdS limit /root/limit.sh
 screen -AmdS ban /root/ban.sh
 
 clear
+
+#install
+#!/bin/bash
+
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/update && bash update
+
