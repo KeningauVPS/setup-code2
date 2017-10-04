@@ -61,8 +61,8 @@ echo "--------------- Selamat Datang Di Vps Anda Boss ---------------"
 	echo -e "\e[40;38;5;82m[29]\e[40;38;5;198mBenchmark server\e[40;38;5;226m [bench-network]"
 	echo -e "\e[40;38;5;82m[30]\e[40;38;5;198mLihat penggunaan RAM server\e[40;38;5;226m [ram]"
 if [[ "$OS" = 'debian' ]]; then 
-	echo -e "\e[40;38;5;82m[31]\e[40;38;5;198m Restart OpenSSH\e[40;38;5;226m [service ssh restart]"
-	echo -e "\e[40;38;5;82m[32]\e[40;38;5;198m Restart Dropbear\e[40;38;5;226m [service dropbear restart]"
+	echo -e "\e[40;38;5;82m[31]\e[40;38;5;198mRestart OpenSSH\e[40;38;5;226m [service ssh restart]"
+	echo -e "\e[40;38;5;82m[32]\e[40;38;5;198mRestart Dropbear\e[40;38;5;226m [service dropbear restart]"
 	echo -e "\e[40;38;5;82m[33]\e[40;38;5;198mRestart OpenVPN\e[40;38;5;226m [service openvpn restart]"
 	echo -e "\e[40;38;5;82m[34]\e[40;38;5;198m Restart PPTP VPN\e[40;38;5;226m [service pptpd restart]"
 	echo -e "\e[40;38;5;82m[35]\e[40;38;5;198mRestart Webmin e[40;38;5;226m [service webmin restart]"
@@ -70,7 +70,7 @@ if [[ "$OS" = 'debian' ]]; then
 else
 	echo -e "\e[40;38;5;82m[31]\e[40;38;5;198mRestart OpenSSH\e[40;38;5;226m [service sshd restart]"
 	echo -e "\e[40;38;5;82m[32]\e[40;38;5;198mRestart Dropbear\e[40;38;5;226m [service dropbear restart]"
-	echo -e "\e[40;38;5;82m[33]\e[40;38;5;198m Restart OpenVPN\e[40;38;5;226m [service openvpn restart]"
+	echo -e "\e[40;38;5;82m[33]\e[40;38;5;198mRestart OpenVPN\e[40;38;5;226m [service openvpn restart]"
 	echo -e "\e[40;38;5;82m[34]\e[40;38;5;198mRestart PPTP VPN\e[40;38;5;226m [service pptpd restart]"
 	echo -e "\e[40;38;5;83m[35]\e[40;38;5;198mRestart Webmin\e[40;38;5;226m [service webmin restart]"
 	echo -e "\e[40;38;5;82m[36]\e[40;38;5;198mRestart Squid Proxy\e[40;38;5;226m [service squid restart]"
@@ -78,9 +78,9 @@ fi
 echo -e "\e[40;38;5;82m[37]\e[40;38;5;198mEdit Port Server\e[40;38;5;226 [medit-port]"
 echo -e "\e[40;38;5;82m[38]\e[40;38;5;198mSet auto reboot pada server\e[40;38;5;226m [auto-reboot]"
 echo -e "\e[40;38;5;82m[39]\e[40;38;5;198mReboot server\e[40;38;5;226m [reboot]"
-echo -e "\e[40;38;5;82m[40]\e[40;38;5;198m Ganti Password Server\e[40;38;5;226m [passwd]"
+echo -e "\e[40;38;5;82m[40]\e[40;38;5;198mGanti Password Server\e[40;38;5;226m [passwd]"
 echo -e "\e[40;38;5;82m[41]\e[40;38;5;198mLihat log instalasi\e[40;38;5;226m [log-install]"
-echo -e "\e[40;38;5;82m[42]\e[40;38;5;198mUpdate now\e[40;38;5;226mComing soon"
+echo -e "\e[40;38;5;82m[42]\e[40;38;5;198mUpdate now\e[40;38;5;226m [Coming soon]"
 echo -e "\e[38;5;33m@orangkuatsabahanterkini"
 read -p "Tulis Pilihan Anda (angka): " x
 if test $x -eq 1; then
