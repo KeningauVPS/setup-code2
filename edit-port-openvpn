@@ -1,0 +1,160 @@
+#!/bin/bash
+#Cek ROOT
+if [[ $USER != "root" ]]; then
+	echo "Maaf, Anda harus menjalankan ini sebagai root"
+	exit
+fi
+
+#Cek OS
+if [[ -e /etc/debian_version ]]; then
+	OS=debian
+elif [[ -e /etc/centos-release || -e /etc/redhat-release ]]; then
+	OS=centos
+else
+	echo "Sepertinya Anda tidak menjalankan script ini pada sistem Debian, Ubuntu atau CentOS"
+	exit
+fi
+
+#Remove Temporary Files
+rm -f /root/openvpnport
+
+if [[ "$OS" = 'debian' ]]; then
+	read -p "Masukkan port OpenVPN yang diinginkan: " port
+
+	openvpnport="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+	echo ""
+	echo -e "\e[34;1mPort OpenVPN sebelum diedit:\e[0m"
+
+	cat > /root/openvpnport <<-END
+	$openvpnport
+	END
+
+	exec</root/openvpnport
+	while read line
+	do
+		echo "Port $line"
+		sed "/port $line/d" -i /etc/openvpn/server.conf
+	done
+	rm -f /root/openvpnport
+
+	echo ""
+
+	for i in ${port[@]}
+	do
+		netstat -nlpt | grep -w "$i" > /dev/null
+		if [ $? -eq 0 ]; then
+			netstat -nlpt | grep -i openvpn | grep -w "$i" > /dev/null
+			if [ $? -eq 0 ]; then
+				sed -i "1 a\port $i" /etc/openvpn/server.conf
+				echo -e "\e[032;1mPort $i berhasil ditambahkan\e[0m"
+			fi
+			
+			netstat -nlpt | grep -i ssh | grep -w "$i" > /dev/null
+			if [ $? -eq 0 ]; then
+				echo -e "\e[031;1mPort $i gagal ditambahkan. Port $i sudah digunakan untuk OpenSSH\e[0m"
+			fi
+			
+			netstat -nlpt | grep -i dropbear | grep -w "$i" > /dev/null
+			if [ $? -eq 0 ]; then
+				echo -e "\e[031;1mPort $i gagal ditambahkan. Port $i sudah digunakan untuk Dropbear\e[0m"
+			fi
+			
+			netstat -nlpt | grep -i squid | grep -w "$i" > /dev/null
+			if [ $? -eq 0 ]; then
+				echo -e "\e[031;1mPort $i gagal ditambahkan. Port $i sudah digunakan untuk Squid\e[0m"
+			fi
+		else
+			sed -i "1 a\port $i" /etc/openvpn/server.conf
+			echo -e "\e[032;1mPort $i berhasil ditambahkan\e[0m"
+		fi
+	done
+
+	echo ""
+	service openvpn restart > /dev/null
+	sleep 0.5
+	rm -f /root/openvpnport
+	openvpnport="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+	echo ""
+	echo -e "\e[34;1mPort OpenVPN sesudah diedit:\e[0m"
+
+	cat > /root/openvpnport <<-END
+	$openvpnport
+	END
+
+	exec</root/openvpnport
+	while read line
+	do
+		echo "Port $line"
+	done
+	rm -f /root/openvpnport
+else
+	read -p "Masukkan port OpenVPN yang diinginkan: " port
+
+	openvpnport="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+	echo ""
+	echo -e "\e[34;1mPort OpenVPN sebelum diedit:\e[0m"
+
+	cat > /root/openvpnport <<-END
+	$openvpnport
+	END
+
+	exec</root/openvpnport
+	while read line
+	do
+		echo "Port $line"
+		sed "/port $line/d" -i /etc/openvpn/server.conf
+	done
+	rm -f /root/openvpnport
+
+	echo ""
+
+	for i in ${port[@]}
+	do
+		netstat -nlpt | grep -w "$i" > /dev/null
+		if [ $? -eq 0 ]; then
+			netstat -nlpt | grep -i openvpn | grep -w "$i" > /dev/null
+			if [ $? -eq 0 ]; then
+				sed -i "1 a\port $i" /etc/openvpn/server.conf
+				echo -e "\e[032;1mPort $i berhasil ditambahkan\e[0m"
+			fi
+			
+			netstat -nlpt | grep -i ssh | grep -w "$i" > /dev/null
+			if [ $? -eq 0 ]; then
+				echo -e "\e[031;1mPort $i gagal ditambahkan. Port $i sudah digunakan untuk OpenSSH\e[0m"
+			fi
+			
+			netstat -nlpt | grep -i dropbear | grep -w "$i" > /dev/null
+			if [ $? -eq 0 ]; then
+				echo -e "\e[031;1mPort $i gagal ditambahkan. Port $i sudah digunakan untuk Dropbear\e[0m"
+			fi
+			
+			netstat -nlpt | grep -i squid | grep -w "$i" > /dev/null
+			if [ $? -eq 0 ]; then
+				echo -e "\e[031;1mPort $i gagal ditambahkan. Port $i sudah digunakan untuk Squid\e[0m"
+			fi
+		else
+			sed -i "1 a\port $i" /etc/openvpn/server.conf
+			echo -e "\e[032;1mPort $i berhasil ditambahkan\e[0m"
+		fi
+	done
+
+	echo ""
+	service openvpn restart > /dev/null
+	sleep 0.5
+	rm -f /root/openvpnport
+	openvpnport="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+	echo ""
+	echo -e "\e[34;1mPort OpenVPN sesudah diedit:\e[0m"
+
+	cat > /root/openvpnport <<-END
+	$openvpnport
+	END
+
+	exec</root/openvpnport
+	while read line
+	do
+		echo "Port $line"
+	done
+	rm -f /root/openvpnport
+fi
+cd

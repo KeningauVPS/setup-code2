@@ -1,0 +1,28 @@
+#!/bin/bash
+IP=$(wget -qO- ipv4.icanhazip.com)
+read -p "Berapa jumlah account yang akan dibuat: " banyakuser
+read -p "Masukkan lama masa aktif account(Hari): " aktif
+today="$(date +"%Y-%m-%d")"
+expire=$(date -d "$aktif days" +"%Y-%m-%d")
+clear
+echo "Terima Kasih Kerana Sudah Berlangganan Dengan Nobita95"
+echo " "
+echo "Detail Account"
+echo "----------------------------------"
+echo "Host/IP: $IP"
+echo "Port OpenSSH: 22, 143"
+echo "Port Dropbear: 443, 110, 109"
+echo "Port Squid Proxy: 80, 8080"
+echo "Aktif Sampai: $(date -d "$aktif days" +"%d-%m-%Y")"
+  echo "----------------------------------"
+for (( i=1; i <= $banyakuser; i++ ))
+do
+	USER=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`
+	useradd -M -N -s /bin/false -e $expire $USER
+	PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
+	echo $USER:$USER | chpasswd
+	echo "$i. Username/Password: $USER"
+done
+
+  echo "--------------------------------------"
+  echo " "
