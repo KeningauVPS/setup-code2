@@ -1,5 +1,5 @@
 # User Status
-cd
+cd  
 wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-list.sh
 mv ./user-list.sh /usr/local/bin/user-list.sh
 chmod +x /usr/local/bin/user-list.sh
@@ -239,7 +239,7 @@ chmod +x /usr/bin/restart-openvpn.sh
 
 # restart-webmin
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/restart-webmin.sh
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/restart-webmin.sh
 mv ./restart-webmin.sh /usr/bin/restart-webmin.sh
 chmod +x /usr/bin/restart-webmin.sh
 
