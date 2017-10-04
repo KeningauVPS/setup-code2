@@ -18,13 +18,13 @@ chmod +x /usr/bin/generate.sh
 
 # instal Generate Akun Trial
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/trial
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/trial
 mv ./trial /usr/bin/trial
 chmod +x /usr/bin/trial
 
 # instal  Ganti Password Akun SSH/VPN
 cd
-wget https://raw.githubusercontent.com/elhad/cstup/master/config/user-password
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-password
 mv ./user-password /usr/bin/user-paswword
 chmod +x /usr/bin/user-password
 
@@ -77,9 +77,9 @@ chmod +x /usr/bin/autokill
 
 # instal  Kill Multi Login2
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/autokill.sh
-mv ./autokill.sh /usr/bin/autokill.sh
-chmod +x /usr/bin/autokill.sh
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/autokill
+mv ./autokill /usr/bin/autokill
+chmod +x /usr/bin/autokill
 
 # instal Auto Banned Akun
 cd
@@ -125,13 +125,13 @@ chmod +x /usr/bin/user-add-pptp
 
 # instal Hapus Akun PPTP VPN
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/user-delete-pptp
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-delete-pptp
 mv ./user-delete-pptp /usr/bin/user-delete-pptp
 chmod +x /usr/bin/user-delete-pptp
 
 # instal Lihat Detail Akun PPTP VPN
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/user-detail-pptp
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-detail-pptp
 mv ./user-detail-pptp /usr/bin/user-detail-pptp
 chmod +x /usr/bin/user-detail-pptp
 
@@ -143,13 +143,13 @@ chmod +x /usr/bin/userloginpptp.sh
 
 # instal Lihat Daftar User PPTP VPN
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/user-login-pptp
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-login-pptp
 mv ./user-login-pptp /usr/bin/user-login-pptp
 chmod +x /usr/bin/user-login-pptp
 
 # instal Set Auto Reboot
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/auto-reboot
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/auto-reboot
 mv ./auto-reboot /usr/bin/auto-reboot
 chmod +x /usr/bin/auto-reboot
 
@@ -161,27 +161,27 @@ chmod +x /usr/bin/auto-limit-script.sh
 
 # instal userdelete
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/userdelete.sh
-mv ./userdelete.sh /usr/bin/userdelete.sh
-chmod +x /usr/bin/userdelete.sh
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/user-delete
+mv ./user-delete /usr/bin/user-delete
+chmod +x /usr/bin/user-delete
 
 # instal diagnosa
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/diagnosa.sh
-mv ./diagnosa.sh /usr/bin/diagnosa.sh
-chmod +x /usr/bin/diagnosa.sh
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/diagnosa
+mv ./diagnosa /usr/bin/diagnosa
+chmod +x /usr/bin/diagnosa
 
 # instal ram
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/ram.sh
-mv ./ram.sh /usr/bin/ram.sh
-chmod +x /usr/bin/ram.sh
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/ram
+mv ./ram /usr/bin/ram
+chmod +x /usr/bin/ram
 
 # log install
 cd
-wget https://raw.githubusercontent.com/ehomecore91/setup-code/master/log-install.sh
-mv ./log-install.sh /usr/bin/log-install.sh
-chmod +x /usr/bin/log-install.sh
+wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/log-install
+mv ./log-install /usr/bin/log-install
+chmod +x /usr/bin/log-install
 
 # edit ubah-port
 cd
@@ -249,7 +249,7 @@ wget https://raw.githubusercontent.com/ehomecore91/setup-code2/master/menu
 mv ./menu /usr/local/bin/menu
 chmod +x /usr/local/bin/menu
 cd ~/
-rm -f /root/update.sh
+rm -f /root/update
 
 echo""
 menu
